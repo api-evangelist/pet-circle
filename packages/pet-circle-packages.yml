@@ -1,0 +1,68 @@
+generated: '2026-08-26'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=petcircle (npm registry search + per-package metadata, 2026-08-26)
+note: >-
+  Two first-party npm packages exist and are unambiguously Pet Circle's: both are
+  published by the npm user `george_at_petcircle` whose registry e-mail is
+  george.zhang@petcircle.com.au. Neither is a public developer SDK. Both carry no
+  README, no homepage, no repository field and exactly ONE published version, both
+  released within two minutes of each other on 2024-01-18 UTC per the registry
+  `time` metadata, and `petcircle-shiba-api` depends on
+  `@vue-storefront/middleware` — i.e. these are internal Vue Storefront / Alokai
+  integration libraries for Pet Circle's own headless storefront, pushed to the public
+  registry as a distribution convenience. They wrap an API Pet Circle does not publish,
+  so no `SDKs` pointer is emitted from this file: crediting Pet Circle with a developer
+  SDK program would assert a surface that does not exist. Registries checked with no
+  Pet Circle result: PyPI, RubyGems, crates.io, NuGet, Maven Central, pkg.go.dev,
+  Packagist.
+packages:
+- name: petcircle-shiba-sdk
+  registry: npm
+  url: https://www.npmjs.com/package/petcircle-shiba-sdk
+  official: true
+  official_basis: published by npm user george_at_petcircle (george.zhang@petcircle.com.au)
+  language: TypeScript
+  version: 0.2.4
+  published: '2024-01-18'
+  version_count: 1
+  dependencies:
+  - axios@^0.27.2
+  public_developer_sdk: false
+  note: >-
+    Single release, no README, no repository, no homepage. Axios-based client library.
+    Last published 2024-01-18 — over two and a half years stale as of this probe.
+- name: petcircle-shiba-api
+  registry: npm
+  url: https://www.npmjs.com/package/petcircle-shiba-api
+  official: true
+  official_basis: published by npm user george_at_petcircle (george.zhang@petcircle.com.au)
+  language: TypeScript
+  version: 0.3.5
+  published: '2024-01-18'
+  version_count: 1
+  dependencies:
+  - '@vue-storefront/middleware@3.0.0-rc.2'
+  - axios@^0.21.1
+  - consola@^3.0.0
+  public_developer_sdk: false
+  note: >-
+    Vue Storefront (Alokai) middleware integration for Pet Circle's own storefront.
+    Single release, no README, no repository. Pinned to a Vue Storefront middleware
+    release candidate. Last published 2024-01-18.
+registries_checked:
+- registry: npm
+  result: 2 first-party packages found
+- registry: pypi
+  result: none (petcircle 404, pet-circle 404)
+- registry: rubygems
+  result: none
+- registry: crates.io
+  result: none
+- registry: nuget
+  result: none
+- registry: maven-central
+  result: none
+- registry: pkg.go.dev
+  result: none
+- registry: packagist
+  result: none

@@ -1,0 +1,80 @@
+generated: '2026-08-26'
+method: probed
+source: direct HTTPS probes of every Pet Circle host on 2026-08-26
+note: >-
+  Every /.well-known/ path probed on every Pet Circle host missed. www.petcircle.com.au
+  answers /.well-known/* from the Next.js/Vercel storefront with a real 404 error page
+  (these requests are NOT intercepted by the Vercel Security Checkpoint that 429s the
+  rest of the site, so the 404s are genuine, not challenge artefacts). The apex
+  petcircle.com.au 301-redirects to www. The Pet Circle Pharmacy host answers 404 on
+  every path. No security.txt, no OpenID/OAuth metadata, no api-catalog, no ai-plugin
+  and no agent card is served anywhere. Per the pipeline contract NO WellKnown,
+  SecurityTxt or AgentCard pointer is emitted from this file — it records an absence,
+  and an absence must not be scored as a presence.
+hosts:
+- host: www.petcircle.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: petcircle.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+- host: www.petcirclepharma.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null

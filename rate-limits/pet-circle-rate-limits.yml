@@ -1,0 +1,23 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.petcircle.com.au/ (site + web search for Pet Circle API rate-limit documentation, 2026-08-26)
+limit_count: 0
+note: >-
+  No published API rate limits — Pet Circle has no public API and no developer
+  documentation in which limits could be stated, so there are no documented quotas,
+  windows, burst allowances or exhaustion status codes to record. The only rate-limiting
+  behaviour observed is an edge protection layer on the storefront itself: every path on
+  www.petcircle.com.au other than /.well-known/* answered HTTP 429 with a "Vercel Security
+  Checkpoint" interstitial to our probe on 2026-08-26, including / , /robots.txt and
+  /sitemap.xml, with a browser User-Agent. That is a bot challenge on a consumer web
+  storefront, not a documented API rate-limit contract, and no RateLimit-* or Retry-After
+  headers accompanied it. Recorded as an honest zero.
+rate_limits: []
+observed:
+- host: www.petcircle.com.au
+  behaviour: bot-challenge
+  status: 429
+  body: Vercel Security Checkpoint interstitial (HTML)
+  headers_returned: []
+  observed_on: '2026-08-26'
+  note: applies to the human storefront; not an API rate-limit policy

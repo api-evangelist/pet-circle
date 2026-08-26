@@ -1,0 +1,13 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.petcircle.com.au/ (site + web search for a Pet Circle developer/API pricing page, 2026-08-26)
+plan_count: 0
+note: >-
+  Pet Circle publishes no API plans, no developer tiers and no API pricing of any kind,
+  because it operates no public API program. Pet Circle is a direct-to-consumer retailer;
+  its published commercial surface is retail product pricing plus a consumer subscription
+  ("autodelivery") discount, neither of which is an API plan. Partner/wholesale traffic is
+  handled out of band via EDI trading-partner onboarding and via third-party affiliate
+  networks (Commission Factory, Sovrn), not through a self-serve API tier. There is no
+  developer portal to price. Recorded as an honest zero rather than omitted.
+plans: []
