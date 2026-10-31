@@ -64,5 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pet Circle is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/pet-circle-stock
+Pet Circle is Australia's largest online pet-supplies retailer, selling pet food, flea and worming treatments, toys, bedding and prescription veterinary products direct to consumers across Australia. Founded in mid-2011 in Sydney by Mike Frizell and James Edwards as Paws for Life and rebranded to Pet Circle in early 2014, the company reached unicorn status with a valuation above AU$1 billion after a $125 million Series C in December 2021, and extended into adjacent lines with Pet Circle Pharmacy (petcirclepharma.com.au) and Pet Circle Insurance (petcircleinsurance.com.au, launched May 2023). Its storefront is a headless commerce stack — a commercetools back end fronted by a Vue Storefront / Alokai layer on Vercel, with Google Cloud Functions gluing SaaS services together — but Pet Circle operates that architecture internally: it publishes no public developer portal, no API reference, and no machine-readable API contract. Trading-partner integration is handled out of band through EDI, and consumer-side partner traffic runs through third-party affiliate networks rather than a first-party API program.
+
+**Areas:** Company · Retail · E-Commerce · Pets · Consumer · Australia · Direct to Consumer · Pet Supplies · Headless Commerce
+
+## Pet Circle on APIs.io
+
+Everything profiled for Pet Circle is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pet-circle/](https://apis.io/providers/pet-circle/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pet Circle Domain Security](https://apis.io/security/pet-circle/pet-circle-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Pet Circle Plans Pricing](https://apis.io/plans/pet-circle/pet-circle-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Pet Circle Rate Limits](https://apis.io/rate-limits/pet-circle/pet-circle-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.petcircle.com.au/)
+- [Support](https://www.petcircle.com.au/faq)
+- [Terms of service](https://www.petcircle.com.au/terms-of-use)
+- [Privacy policy](https://www.petcircle.com.au/privacy)
+- [GitHub](https://github.com/PawsForLife)
+
+## API Evangelist rating
+
+**Kin Score 6.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pet-circle/](https://apis.io/providers/pet-circle/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pet Circle: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pet-circle/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
